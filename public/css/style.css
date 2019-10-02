@@ -1,0 +1,222 @@
+:root {
+  --primary-color: rgb(73, 173, 140);
+  --background-color: #eee;
+}
+
+body {
+  font-family: "Open-sans", sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+}
+
+.container {
+  margin: auto;
+}
+
+img {
+  width: 100%;
+}
+
+.primary-text {
+  color: var(--primary-color);
+}
+
+.primary-background {
+  background: var(--primary-color);
+}
+
+#main-header {
+  border-bottom: 1px solid var(--primary-color);
+}
+
+#subheader {
+  background: #333;
+  color: #fff;
+}
+
+#navbar {
+  text-transform: uppercase;
+}
+
+#navbar li {
+  display: inline;
+  padding-right: 20px;
+  list-style: none;
+}
+
+#navbar a {
+  text-decoration: none;
+  color: #888;
+}
+
+#navbar li.current a,
+#navbar a:hover {
+  color: var(--primary-color);
+  border-bottom: 3px solid var(--primary-color);
+  padding-bottom: 3px;
+}
+
+#showcase {
+  background: url("../img/showcase.jpg") no-repeat center center;
+  border-bottom: 1px solid var(--primary-color);
+  margin-bottom: 30px;
+}
+
+#showcase .row {
+  height: 600px;
+}
+
+#showcase h1 {
+  font-size: 3rem;
+  margin: 0;
+  padding-bottom: 20px;
+}
+
+#showcase p {
+  color: #ccc;
+  margin: 0;
+}
+
+#showcase .showcase-content {
+  background: #333;
+  color: #fff;
+  border-radius: 90px;
+  padding: 40px;
+  opacity: 0.9;
+}
+
+#features h2 {
+  font-size: 2.2rem;
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+#features p {
+  color: #888;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+#features .fa {
+  color: var(--primary-color);
+  font-size: 3rem;
+}
+
+#info {
+  background: #333 url("../img/info-bg.jpg") no-repeat;
+  color: #fff;
+}
+
+#info h2 {
+  font-size: 2.2rem;
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+#info ul {
+  list-style: none;
+  padding: 0;
+}
+
+#info li {
+  line-height: 2em;
+  font-size: 1.5rem;
+}
+
+#company {
+  background: #333;
+  color: #fff;
+  padding: 10px 0;
+}
+
+#company h4 {
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+#company ul {
+  padding: 0;
+  list-style: none;
+  line-height: 2em;
+}
+
+#company input[type="text"] {
+  padding: 7px;
+}
+
+#company button {
+  background: #222;
+  color: #fff;
+  padding: 10px;
+  border: 0;
+}
+
+#main-footer {
+  background: var(--primary-color);
+  color: #333;
+}
+
+#page {
+  margin-bottom: 40px;
+}
+
+.services ul li {
+  list-style: none;
+  padding: 10px;
+}
+
+.services ul li:nth-child(odd) {
+  background: #333;
+  color: #fff;
+}
+
+.services ul li:nth-child(even) {
+  background: var(--primary-color);
+  color: #333;
+}
+
+.contact form {
+  background: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+.contact form input[type="text"],
+.contact form input[type="email"] {
+  width: 50%;
+  height: 30px;
+  margin-bottom: 10px;
+}
+
+.contact form textarea {
+  width: 50%;
+  height: 100px;
+}
+
+.contact form button {
+  width: 50%;
+  padding: 10px 0;
+  border: 0;
+  background: #222;
+  color: #fff;
+}
+
+.contact form label {
+  text-transform: uppercase;
+}
+
+/*Media queries*/
+@media (max-width: 990px) {
+  #showcase h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  #showcase .showcase-content {
+    padding: 40px 10px;
+  }
+}
